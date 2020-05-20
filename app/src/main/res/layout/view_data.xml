@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="600dp">
+    <TextView
+        style="@style/view_data"
+        android:text="温度"
+        />
+    <com.nuc.server.util.view.DataView
+        android:id="@+id/temperatureView"
+        android:layout_gravity="center"
+        android:padding="20dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp" />
+
+</LinearLayout>

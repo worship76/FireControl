@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/lineChart_LL_empty"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lineChart_LL_tem"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="温度曲线"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <com.idtk.smallchart.chart.LineChart
+                        android:id="@+id/lineChart_temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/lineChart_LL_smoke"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"></LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="浓度"
+                        android:layout_gravity="center_horizontal"
+                        />
+                    <com.idtk.smallchart.chart.LineChart
+                        android:id="@+id/lineChart_smoke"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/lineChart_RL_empty"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:visibility="visible"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rel_tip_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/lineChart_rat_empty"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                >
+            </LinearLayout>
+            <Button
+                android:id="@+id/dateChoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@drawable/white_btn"
+                android:textColor="#fff"
+                android:text="选择日期"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
